@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3:Bordes y selectores</title>
+</head>
+
+<style>
+
+    body{
+        background-image: url("oceano.jpg");
+    }
+
+    #north{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 50vh;
+        
+    }
+    #background{
+        height: 50vh;
+        width: 50vw;
+        background-image: url("northman.jpg");
+        background-size:cover;
+        border: 20px double;
+        border-image: url("oceano.jpg") 20 20 20 20 repeat stretch;
+    }
+
+    #background:active{
+        padding: 20px;
+        height: 30vh;
+        width: 30vw;
+        background-image: url("imagen.jpg");
+    }
+
+    #sinopsis{
+        margin-top: 25px;
+      }
+    
+    p {
+        text-align: center;
+        font-family:'Segoe UI';
+        font-size: 15px;
+        color:cadetblue;
+        background-color: black;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    p:hover:first-letter {
+        font-family:Impact;
+      }
+    p:active {
+        column-count: 3;
+        max-height: 30vh;
+      }
+
+    p:last-child {
+        background-color:cornflowerblue;
+        color:black;
+    }
+
+</style>
+<body>
+
+    <div id="north">
+        <div id="background">
+        </div>
+    </div>
+    <div id="sinopsis">
+        <p>
+            Robert Eggers vuelve con una épica historia de venganza vikinga. Una apuesta arriesgada. El novel director americano, 
+            que tan buenas sensaciones ha dejado con sus dos primeros largometrajes, se enfrentaba al desafío de una superproducción 
+            centrada en un tema tan manido como el de la venganza  que tantas y tantas veces nos hemos encontrado en el cine. Pese a la 
+            dificultad de sorprender y salir airoso, Eggers logra convencernos desde sus fortalezas: la potencia de las imágenes, la 
+            provocación de los sentimientos y la construcción de un espectáculo visual fuera de lo convencional. No es la historia la 
+            que nos envuelve, ni los diálogos los que nos persuaden, sino la fuerza de las emociones que Eggers provoca en nosotros a 
+            base de rituales, gruñidos, escenarios y momentos cuasidelirantes.
+        </p>
+        <p>
+            Nos convence de que nosotros también queremos venganza, nos mete el desagravio en vena, y seguimos las peripecias del protagonista 
+            empatizando con él, aunque conscientes de estar inmersos en un mundo cuya moralidad no es la nuestra, sino que se rige por 
+            códigos distintos.Se trata del mejor trabajo de Eggers, aunque los dos primeros ya daban muestras del talento del director. 
+            En The Northman, Eggers logra por fin conjugar su mayor talento, el visual (cabe recordar que gran parte de su carrera 
+            previa a su debut como director en La Bruja la realiza como diseñador de producción), con el narrativo. Deja atrás la cierta
+            inmadurez de La Bruja y la abstracción de El Faro, para brindar una historia simple pero efectiva, unos diálogos parcos pero
+            eficaces, y una construcción de los personajes a los que comprendemos de inmediato.
+        </p>
+        <p>
+            El resultado es un grandioso espectáculo de mitología y realismo mágico, 
+            que nos mantiene pegados a la butaca durante las dos horas y cuarto que dura la película, y que pasan como un suspiro.No 
+            quiero olvidarme de Nicole Kidman y Ethan Hawke, que en mi opinión destacan entre el buen desempeño general de los actores. 
+            Tanto la una como el otro representan el corazón de lo que intenta conseguir esta película, que es trasladarnos a un mundo 
+            distinto, con reglas alternativas. En definitiva, la cuadratura del círculo de este excelente y prometedor director, que 
+            con The Northman nos da la primera de tantas grandes cintas con las que seguro nos deleitara a lo largo de su carrera.
+        </p>
+    </div>
+    
+</body>
+</html>
